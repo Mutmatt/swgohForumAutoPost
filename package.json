@@ -1,0 +1,26 @@
+{
+  "name": "swgohforumupdater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "checkForumsAndPost.js'",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "cheerio": "^1.0.0-rc.2",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "rss-parser": "^3.5.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.118",
+    "@types/request-promise-native": "^1.0.15",
+    "@types/xml2js": "^0.4.3"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json && prettier --write *.{js,json,css,md,ts} && git add .",
+    "start": "wt serve --hostname localhost --port 1234 checkForumsAndPost.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
